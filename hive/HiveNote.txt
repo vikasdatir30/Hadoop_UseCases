@@ -2,3 +2,5 @@
 -- to set database location 
 create database if not exists  oracle_stg ;
 alter database oracle_stg set dbproperties ('location'='/src_data/oracle_stg');
+
+create database if not exists src_stg_db comment 'to store source data' location '/data/src_stg_db';
